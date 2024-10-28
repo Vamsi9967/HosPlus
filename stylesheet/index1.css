@@ -1,0 +1,302 @@
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+li {
+    float: right;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: #3f3939;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #3f3939;
+}
+
+.sidenav {
+    float: right;
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff8400;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: normal;
+    }
+
+    .icon-text-container h3 {
+        font-size: 10px;
+    }
+
+    .certificate {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:3000px) {
+    .sidenav {
+        display: none;
+    }
+
+    .text-end {
+        display: none;
+    }
+}
+
+h1 {
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 35px;
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: #4F3E8C;
+    font: bold;
+}
+
+.container1 {
+    border-radius: 15px;
+    height: 300px;
+    width: 320px;
+    background-color: #efeaff;
+}
+
+.txt {
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    top: 40px;
+    font-weight: bold;
+}
+
+.it {
+    background-image: url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF-J4f0bpCxSJUys21swhzBfqukDf4J5xIkMo2saC-ltMZDEbp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+    background-image: url('images/back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+    width: 100%;
+}
+
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Overlay behind content but above background */
+}
+
+.bg h1,
+.bg img {
+    position: relative;
+    z-index: 2; /* Ensure content stays above the overlay */
+}
+
+.icon {
+    position: relative;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn1{
+    height: 30px;
+    width: 100px;
+    background-color: #B197FC;
+    margin: 5px;
+    border: transparent;
+    color: #ffffff;
+    border-radius: 4px;
+
+}
+.btn3{
+    height: 55px;
+    width: 250px;
+    background-color: #917ED9;
+    margin: 5px;
+    border: transparent;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+    top: 80px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+.frame img{
+    width: 450px;
+    position: relative;
+    top: 200px;
+    margin: 10px;
+}
+.frame1 img{
+    width: 450px;
+    position: relative;
+    top: 400px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Default styling for .bg */
+.bg {
+    text-align: center;
+    padding: 20px;
+}
+
+.bg img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .bg h1 {
+        font-size: 36px;
+        margin-top: 60px;
+    }
+
+    .bg img {
+        left: 50px; /* Adjust position to fit within tablet screen */
+        top: 100px;
+    }
+}
+
+/* Small screens (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+    .bg h1 {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    .bg img {
+        left: 30px; /* Further adjust position for smaller screens */
+        top: 80px;
+    }
+}
+
+/* Extra small screens (portrait phones, less than 576px) */
+@media (max-width: 576px) {
+    .bg h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    .bg img {
+        left: 10px;
+        top: 50px;
+    }
+}
+
+/* Fine-tuning for very small screens */
+@media (max-width: 425px) {
+    .bg h1 {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .bg img {
+        left: 0;
+        top: 30px;
+    }
+    .txt{
+        font-size: 20px;
+    }
+    .frame img{
+        width: 100px;
+    }
+}
+.frame2{
+    position: relative;
+    top: 400px;
+    margin:0px 40px 5px 5px;
+    position: relative;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 100;
+}
