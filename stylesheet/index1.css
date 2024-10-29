@@ -110,20 +110,14 @@ li a:hover:not(.active) {
     }
 }
 
-h1 {
-    font-size: 35px;
-    position: relative;
-    text-align: center;
-    top: 40px;
-    font-weight: bold;
-}
 
-h2 {
+
+.txt1 {
     font-size: 35px;
     position: relative;
     text-align: center;
     top: 30px;
-    color: #4F3E8C;
+    color: #917ED9;
     font: bold;
 }
 
@@ -135,11 +129,11 @@ h2 {
 }
 
 .txt {
-    font-size: 50px;
+    font-size: 40px;
     position: relative;
     text-align: center;
     top: 40px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .it {
@@ -152,7 +146,7 @@ h2 {
 
 .bg {
     position: relative;
-    background-image: url('images/back.png');
+    background-image: url('images/back1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -173,6 +167,7 @@ h2 {
 .bg h1,
 .bg img {
     position: relative;
+    text-align: center;
     z-index: 2; /* Ensure content stays above the overlay */
 }
 
@@ -239,6 +234,7 @@ h2 {
     .bg h1 {
         font-size: 36px;
         margin-top: 60px;
+        text-align: center;
     }
 
     .bg img {
@@ -252,6 +248,7 @@ h2 {
     .bg h1 {
         font-size: 28px;
         margin-top: 50px;
+        text-align: center;
     }
 
     .bg img {
@@ -265,6 +262,7 @@ h2 {
     .bg h1 {
         font-size: 22px;
         margin-top: 40px;
+        text-align: center;
     }
 
     .bg img {
@@ -278,6 +276,7 @@ h2 {
     .bg h1 {
         font-size: 18px;
         margin-top: 20px;
+        text-align: center;
     }
 
     .bg img {
@@ -290,6 +289,12 @@ h2 {
     .frame img{
         width: 100px;
     }
+    .txt2{
+    position: relative; 
+    top: 500px; 
+    font-weight:bold; 
+    font-size: 25px; 
+    }
 }
 .frame2{
     position: relative;
@@ -299,4 +304,16 @@ h2 {
     z-index: 2;
     font-size: 20px;
     font-weight: 100;
+}
+
+.txt2{
+    position: relative; 
+    top: 225px; 
+    font-weight:bold; 
+    font-size: 30px; 
+    left: 5px;
+}
+.img2{
+    position: relative; 
+    top: 225px; 
 }
