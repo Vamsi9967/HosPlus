@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/index1.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="stylesheet/index.css">
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
@@ -17,7 +17,19 @@
      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <style>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #3f3939;
+}
+
 @media (max-width: 400px) {
     .bg h1 {
         font-size: 18px;
@@ -45,6 +57,164 @@
     }
 }
 
+.footer-section {
+  position: relative;
+}
+
+.single-cta i {
+  color:#7641BF;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+  background-color: #111;
+  top: 160px;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.instagram-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #7641BF;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  background: #111;
+  color: #7641BF;
+  text-decoration: none;
+}
+.footer-widget ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
      </style>
 </head>
 <body>
@@ -53,7 +223,7 @@
         <div class="head1">
         <div class="row align-items-center">
             <div class="col-sm-2">
-                <a href="index1.html">
+                <a href="index.html">
                     <img src="images/hos plus logo.png" alt="Logo" class="img-fluid"
                         style="height: 50px; width: 110px; left: -10px; position: relative; margin: 10px;">
                 </a>
@@ -62,16 +232,16 @@
                 <nav>
                     <ul class="nav justify-content-center that">
                         <li class="nav-item">
-                            <a class="nav-link" href="#Contact">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Services">Services</a>
+                            <a class="nav-link" href="services.html">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#About">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Home">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                     </ul>
                 </nav>
@@ -88,30 +258,45 @@
             style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
-            <a href="#Home"
+            <a href="index.html"
                 style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
-            <a href="#Skills"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Skills</a>
-                <a href="#Resume"
-                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Resume</a>
-            <a href="#Services"
+            <a href="about.html"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">About</a>
+                <!-- <a href="#Resume"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Resume</a> -->
+            <a href="services.html"
                 style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services</a>
-            <a href="#Contact"
+            <a href="contact.html"
                 style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
         </div>
     </div>
     </div>
     </header>
-
-    <div class="it">
+  <div class="container-fluid" style="position: relative; top: 30px;">
+    <div class="section group">
+        <div class="col span_1_of_3">
+          <img class="imgr" src="https://fastly.picsum.photos/id/445/80/80.jpg?hmac=UP88YONEstZWCjjiMH6KJMiknZ2kFQcShNAD8MSMsWA" alt="img">
+          <div class="content">
+          <p>
+            Get good  </br> care for your health
+        </p>
+          </div>
+      
+      </div>
+        <div class="col span_2_of_3" style="background: url('images/doc.png') no-repeat center center; background-size: cover;">
+        <div class="left-inner"></div>
+        <div class="right-inner">
+          <button class="btn2">Know more</button>
+        </div>
+        </div>
     </div>
-    <div class="it1">
-  </div>
-  <div class="bg" style="background-image: url('images/back1.png');">
+</div>
+  <!-- <div class="bg" style="background-image: url('images/back1.png');">
       <img src="images/Mask group1.png" style="position: relative; top: 140px; left: 100px;">
       <img src="images/Mask group.png" style="position: relative; top: 135px;">
       <h1 style="position: relative; top: 85px;font-size: 44px;">Hospital Management Software</h1>
-  </div>
+  </div> -->
+
   <h2 class="txt1">Product Features</h2>
   <h1 class="txt">All the necessary resources for</h1>
   <h1 class="txt">Hospital managment</h1>
@@ -126,8 +311,7 @@
               <h4 style="font-size: 20px; left: 10px; position: relative;">Patient Record Management</h4> 
               <p  style="left: 10px; position: relative; justify-content: center;  margin: 0px 15px 5px 5px;">Patient Record Management Software or System (PRMS) is a digital solution designed to manage patient data and healthcare information efficiently.
               </p>
-              <button class="btn1">Read More</button>
-  
+              
           </div>
       </div>
       <div class="col-sm-4">
@@ -138,7 +322,7 @@
             <h4 style="font-size: 20px; left: 10px; position: relative;">Appointment Scheduling</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 15px 5px 5px;">A digital tool that helps businesses and individuals 
                 manage and automate the process of booking appointments.</p>
-              <button class="btn1">Read More</button>
+             
           </div>
       </div>
       <div class="col-sm-4">
@@ -148,7 +332,7 @@
         </div>
             <h4 style="font-size: 20px; left: 10px; position: relative;">Billing and Invoicing</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 15px 5px 5px;">A digital tool that automates the process of creating and managing invoices for businesses.</p>
-              <button class="btn1">Read More</button>
+             
           </div>
       </div>
     </div>
@@ -162,9 +346,8 @@
                 <i class="fa-solid fa-user-doctor" style="color: #B197FC;"></i>
             </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Physician Management</h4>
-              <p style="left: 10px; position: relative; justify-content: center; margin: 0px 5px 5px 5px;">A tool designed to streamline administrative and clinical tasks in healthcare practices.</p>
-              <button class="btn1">Read More</button>
-    
+              <p style="left: 10px; position: relative; justify-content: center; margin: 0px 5px 5px 5px;">A tool designed to streamline administrative </br> and clinical tasks in healthcare practices.</p>
+              
             </div>
         </div>
         <div class="col-sm-4">
@@ -174,7 +357,6 @@
                 </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Lab Managment</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 10px 5px 5px;">A digital solution designed to streamline the operations of a laboratory.</p>
-              <button class="btn1">Read More</button>
             </div>
         </div>
         <div class="col-sm-4">
@@ -184,7 +366,7 @@
                 </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Medical Billing </h4>
               <p style="left: 10px; position: relative; justify-content: center; margin:0px 5px 5px 5px; color: #8A8A8A;">A digital tool used in healthcare settings to streamline and manage patient care outside of hospital stays.</p>
-              <button class="btn1">Read More</button>
+              
             </div>
         </div>
       </div>
@@ -221,11 +403,25 @@
             <h3 style="position: relative; top: 250px; color: #626262; left: 5px;">Staff, Patient, Doctor, and Admin are all related.</h3>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6" style="background-color: #111; height: 200px; width: 250px; top: 300px; left: 10px;">
-
+                    <div class="col-md-6" style=" height: 200px; width: 250px; top: 300px; left: 10px;">
+                        <p>Staff Portal</p>
+                        <p>Portals for the following staff roles: Accountant, 
+                            Pathologist, Radiologist, Pharmacist, and Receptionist</p>
                     </div>
-                    <div class="col-md-6" style="background-color: #111; height: 200px; width: 250px; position: relative; left: 40px; top: 300px;">
-                        
+                    <div class="col-md-6" style=" height: 200px; width: 250px; position: relative; left: 40px; top: 300px;">
+                        <p>Patient Portal</p>
+                        <p>Make an appointment, pay, access clinical data, and do a lot more.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style=" height: 200px; width: 250px; top: 320px; left: 10px;">
+                        <p>Doctor Portal</p>
+                        <p>Organize patient care, medications, appointments, assignments, and a lot more.</p>
+                    </div>
+                    <div class="col-md-6" style=" height: 200px; width: 250px; position: relative; left: 40px; top: 320px;">
+                        <p>Admin Portal</p>
+                        <p>Create new user roles and accounts, manage all the modules, billing, reports, and much more.</p>
                     </div>
                 </div>
             </div>
@@ -235,6 +431,73 @@
         </div>
     </div>
 </div>
+
+<footer class="footer-section">
+    <div class="container-fluied">
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="images/hos plus logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>We establish connections between individuals, data, and workflows. 
+                              Our solutions stand out for their complete deployment freedom, excellent adaptability, and simplicity of integration.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="services.html">services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                  <div class="footer-social-icon">
+                    <span>Follow us</span>
+                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                </div>
+                <div class="copyright-text">
+                  <p>Copyright &copy; 2018, All Right Reserved.</p>
+              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+  </footer>
 
 <script>
     function openNav() {
