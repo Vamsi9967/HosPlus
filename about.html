@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+     integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+     <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+li {
+    float: right;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: #3f3939;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #3f3939;
+}
+
+.sidenav {
+    float: right;
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff8400;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: normal;
+    }
+
+    .icon-text-container h3 {
+        font-size: 10px;
+    }
+
+    .certificate {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:3000px) {
+    .sidenav {
+        display: none;
+    }
+
+    .text-end {
+        display: none;
+    }
+}
+
+.About{
+    position: relative;
+    top: 20px;
+    height: 480px;
+    width: 1366px;
+    background-color: #372B60;
+    border-radius: 20px;
+    
+}
+
+@media screen and (max-width: 425px) {
+
+    .About{
+    position: relative;
+    top: 20px;
+    height: 480px;
+    /* width: 1366px; */
+    background-color: #372B60;
+    border-radius: 20px;
+    
+}
+}
+
+.box{
+    position: relative; 
+    top: 100px; 
+    margin: 20px;
+    justify-items: center;
+
+}
+.box1{
+    position: relative; 
+    top: 100px; 
+    margin: 20px;
+    justify-items: center;
+
+}
+
+.footer-section {
+  position: relative;
+}
+
+.single-cta i {
+  color:#7641BF;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 0;
+  background-color: #111;
+  top: 160px;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #ffffff;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.instagram-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #7641BF;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  background: #111;
+  color: #7641BF;
+  text-decoration: none;
+}
+.footer-widget ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+header{
+    display: block;
+}
+
+     </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head1">
+                <div class="row align-items-center">
+                    <div class="col-sm-2">
+                        <a href="index.html">
+                            <img src="images/hos plus logo.png" alt="Logo" class="img-fluid"
+                                style="height: 50px; width: 110px; position: relative; margin: 10px;">
+                        </a>
+                    </div>
+                    <div class="col-sm-8">
+                        <nav>
+                            <ul class="nav justify-content-center that">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-sm-2 text-end">
+                        <!-- Sidebar toggle button -->
+                        <span style="font-size: 30px; cursor: pointer; float: right;" onclick="openNav()">&#9776;
+                        </span>
+                    </div>
+                </div>
+
+
+                <!-- Sidebar -->
+                <div id="mySidenav" class="sidenav"
+                    style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                        style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
+                    <a href="index.html"
+                        style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
+                    <a href="about.html"
+                        style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">About</a>
+                    <!-- <a href="#Resume"
+                        style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Resume</a> -->
+                    <a href="services.html"
+                        style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services</a>
+                    <a href="contact.html"
+                        style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container About">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="color: #ffffff; margin: 20px; top: 80px; position: relative;">
+                    About Company
+                </h1>
+                <p style="color: #fff; font-size: 18px; margin: 20px; top: 100px; position: relative;">
+                    The company behind the most popular Hospital Management System in the world is called Esoteric
+                    Projects.
+                    Innovative IT company Esoteric Projects has been assisting customers
+                    all over the world in reaching their objectives.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/Line 4.png" alt="" style="height: 180px; position: absolute; top: 50px;">
+                <img src="images/about.png" alt="" style="height: 300px; position: relative; top: 100px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluied" style="margin: 20px; padding: 10px;">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="images/Line 5.png" alt="" style="height: 80px; position: relative; left: -200px; top: 50px;">
+            </div>
+            <div class="col-md-8">
+                <h3 style="margin: 20px; top: 80px; position: relative;">
+                    Our focus is on creating innovative solutions for the healthcare industry.
+                </h3>
+                <p style="font-size: 18px; margin: 20px; top: 100px; position: relative;">
+                    The company behind the most popular Hospital Management System in the world is called Esoteric
+                    Projects.
+                    Innovative IT company Esoteric Projects has been assisting customers
+                    all over the world in reaching their objectives.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluied box">
+        <div class="row">
+            <div class="col-md-4"
+                style="background-color: #DFD7FF; height: 300px; width: 280px; margin: 10px; border-radius: 25px;">
+                <img src="images/Bulb.png" alt="" style="height: 80px; position: relative; margin-top: 20px;">
+                <h4 style="position: relative; margin-top: 20px;">Innovation</h4>
+                <p style="position: relative; margin-top: 20px;">We are at the forefront of technology and we adapt to
+                    market changes, meeting customer requirements.</p>
+
+            </div>
+
+            <div class="col-md-4"
+                style="background-color: #DFD7FF; height: 300px; width: 280px; margin: 10px; border-radius: 25px; position: relative; top: 70px;">
+                <img src="images/hand.png" alt="" style="height: 60px; position: relative; margin-top: 20px;">
+                <h4 style="position: relative; margin-top: 20px;">Trust</h4>
+                <p style="position: relative; margin-top: 20px;">We have provided solutions to meet their needs, we have
+                    a large portfolio of devoted clients.</p>
+
+            </div>
+
+            <div class="col-md-4"
+                style="background-color: #DFD7FF; height: 300px; width: 280px; margin: 10px; border-radius: 25px; position: relative; top: 150px;">
+                <img src="images/people-fill.png" alt="" style="height: 60px; position: relative; margin-top: 20px;">
+                <h4 style="position: relative; margin-top: 20px;">Teamwork</h4>
+                <p style="position: relative; margin-top: 20px;">In order to accomplish company goals, we appreciate and
+                    promote each person's efforts.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluied box1">
+        <div class="row">
+            <div class="col-md-4"
+                style="background-color: #DFD7FF; height: 300px; width: 280px; margin: 10px; border-radius: 25px;">
+                <img src="images/Frame 1.png" alt="" style="height: 70px; position: relative; margin-top: 20px;">
+                <h4 style="position: relative; margin-top: 20px;">Care & Services</h4>
+                <p style="position: relative; margin-top: 20px;">We prioritize exceptional care and service to ensure
+                    the well-being and satisfaction of our customers.</p>
+
+            </div>
+
+            <div class="col-md-4"
+                style="background-color: #DFD7FF; height: 300px; width: 280px; margin: 10px; border-radius: 25px; position: relative; top: 70px;">
+                <img src="images/Standing.png" alt="" style="height: 70px; position: relative; margin-top: 20px;">
+                <h4 style="position: relative; margin-top: 20px;">Patient safety</h4>
+                <p style="position: relative; margin-top: 20px;">We are committed to ensuring patient safety through
+                    stringent protocols and continuous improvement in our practices.</p>
+
+            </div>
+
+            <div class="col-md-4"
+                style="background-color: #ffffff; height: 300px; width: 280px; margin: 10px; border-radius: 25px; position: relative; top: 150px;">
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container-fluied">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="images/hos plus logo.png" class="img-fluid"
+                                        alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>We establish connections between individuals, data, and workflows.
+                                    Our solutions stand out for their complete deployment freedom, excellent
+                                    adaptability, and simplicity of integration.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+                        </div>
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Policy</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-grid.min.css"
+     integrity="sha512-ZuRTqfQ3jNAKvJskDAU/hxbX1w25g41bANOVd1Co6GahIe2XjM6uVZ9dh0Nt3KFCOA061amfF2VeL60aJXdwwQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+     <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+li {
+    float: right;
+    position: relative;
+}
+
+li a {
+    display: block;
+    color: #3f3939;
+    text-align: center;
+    font-size: 15px;
+    padding: 14px 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #3f3939;
+}
+
+.sidenav {
+    float: right;
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff8400;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 425px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+    html {
+        scroll-behavior: normal;
+    }
+
+    .icon-text-container h3 {
+        font-size: 10px;
+    }
+
+    .certificate {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .sidenav {
+        display: block;
+    }
+
+    .that {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width:3000px) {
+    .sidenav {
+        display: none;
+    }
+
+    .text-end {
+        display: none;
+    }
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+font-size: 0.75em;
+color: #7641BF;
+top: -5px;
+-webkit-transition: all 0.225s ease;
+transition: all 0.225s ease;
+}
+
+.styled-input {
+float: left;
+width: 293px;
+margin: 1rem 0;
+position: relative;
+border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+.styled-input {
+    width:100%;
+}
+}
+
+.styled-input label {
+color: #DFD7FF;
+padding: 1.3rem 30px 1rem 30px;
+position: absolute;
+top: 5px;
+left: 0;
+-webkit-transition: all 0.25s ease;
+transition: all 0.25s ease;
+pointer-events: none;
+}
+
+.styled-input.wide { 
+width: 650px;
+max-width: 100%;
+}
+
+input, textarea {
+padding: 30px;
+border: 0;
+width: 100%;
+font-size: 1rem;
+background-color: #ffffff;
+color: #DFD7FF;
+height: 2px;
+border-bottom: 2px solid #b179ff;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+width: 100%;
+-webkit-transition: all 0.075s ease;
+transition: all 0.075s ease;
+}
+
+textarea {
+width: 100%;
+min-height: 15em;
+}
+
+.input-container {
+width: 650px;
+max-width: 100%;
+margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+padding: 7px 35px;
+border-radius: 60px;
+display: inline-block;
+background-color: #7641BF;
+color: white;
+font-size: 18px;
+cursor: pointer;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+          0 2px 10px 0 rgba(0,0,0,0.07);
+-webkit-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+transform: translateY(1px);
+box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+          0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+@media (max-width: 768px) {
+.submit-btn {
+    float: none;
+    text-align:center;
+}
+}
+
+input[type=checkbox] + label {
+color: #ffffff;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery{
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.icon{
+  font-size: 20px;
+  margin: 30px;
+  padding: 20px;
+}
+
+
+.footer-section {
+  position: relative;
+}
+
+.single-cta i {
+  color:#7641BF;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 0;
+  background-color: #111;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.instagram-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #7641BF;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  background: #111;
+  color: #7641BF;
+  text-decoration: none;
+}
+.footer-widget ul li a {
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+     </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="head1">
+        <div class="row align-items-center">
+            <div class="col-sm-2">
+                <a href="index.html">
+                    <img src="images/hos plus logo.png" alt="Logo" class="img-fluid"
+                        style="height: 50px; width: 110px; position: relative; margin: 10px;">
+                </a>
+            </div>
+            <div class="col-sm-8">
+                <nav>
+                    <ul class="nav justify-content-center that">
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-2 text-end">
+                <!-- Sidebar toggle button -->
+                <span style="font-size: 30px; cursor: pointer; float: right;" onclick="openNav()">&#9776; </span>
+            </div>
+        </div>
+
+
+        <!-- Sidebar -->
+        <div id="mySidenav" class="sidenav"
+            style="display: none; position: fixed; width: 250px; height: 100%; background-color: #111; top: 0; left: 0; padding-top: 60px; z-index: 1;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                style="position: absolute; top: 0; right: 25px; font-size: 36px;">&times;</a>
+            <a href="index.html"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Home</a>
+            <a href="about.html"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">About</a>
+                <!-- <a href="#Resume"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Resume</a> -->
+            <a href="services.html"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Services</a>
+            <a href="contact.html"
+                style="padding: 8px 8px 8px 32px; text-decoration: none; font-size: 25px; color: #818181; display: block;">Contact</a>
+        </div>
+    </div>
+    </div>
+
+<div class="container-fluied" style="position: relative; top: 30px;">
+  <div class="container">
+    <h1 style="text-align: center;">Get In <span style="color: #7641BF;">Touch</span></h1>
+  </div>
+    <div class="container">
+      <div class="row input-container">
+        <div class="col-xs-12">
+            <div class="styled-input wide">
+                <input type="text" required />
+                <label>Name</label>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="styled-input">
+                <input type="text" required />
+                <label>Email</label>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="styled-input" style="float:right;">
+                <input type="text" required />
+                <label>Phone Number</label>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="styled-input wide">
+                <textarea required></textarea>
+                <label>Message</label>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="btn-lrg submit-btn">Send Message</div>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-section">
+  <div class="container-fluied">
+    <div class="container" style="text-align: center;">
+      <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <!-- <i class="fas fa-map-marker-alt"></i> -->
+                      <div class="cta-text">
+                          <h4>Location</h4>
+                          <span>1010 Avenue, sw 54321, chandigarh</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <!-- <i class="fas fa-phone"></i> -->
+                      <div class="cta-text">
+                          <h4>Call us</h4>
+                          <span>+91 9100135553</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                  <div class="single-cta">
+                      <!-- <i class="far fa-envelope-open"></i> -->
+                      <div class="cta-text">
+                          <h4>Mail us</h4>
+                          <span>info@hosplus.com</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      <div class="footer-content pt-5 pb-5">
+          <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                  <div class="footer-widget">
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="images/hos plus logo.png" class="img-fluid" alt="logo"></a>
+                      </div>
+                      <div class="footer-text">
+                          <p>We establish connections between individuals, data, and workflows. 
+                            Our solutions stand out for their complete deployment freedom, excellent adaptability, and simplicity of integration.</p>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                  <div class="footer-widget">
+                      <div class="footer-widget-heading">
+                          <h3>Useful Links</h3>
+                      </div>
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="about.html">about</a></li>
+                          <li><a href="#">services</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+              </div>
+              <div class="copyright-text">
+                <p>Copyright &copy; 2018, All Right Reserved.</p>
+            </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- <div class="copyright-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          
+                          <li><a href="#">Terms</a></li>
+                          <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Policy</a></li>
+                          
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> -->
+</footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
+    </script>
+</body>
+</html>
