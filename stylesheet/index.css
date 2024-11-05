@@ -87,7 +87,19 @@ li a:hover:not(.active) {
   .certificate {
       height: 100px;
   }
+
+  .flex1{
+    position: relative;
+    text-align: center;
+    justify-content: space-around; 
+    margin: 10px;
+    padding: 5px;
+    margin-top: 80px;
+  }
+
 }
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -492,4 +504,12 @@ padding: 10px;
 .left-inner{width:0px; opacity:0; transition-duration: 400ms;}
 .content{margin-right:0px;}
 }
-  
+
+.flex1{
+  position: relative;
+  text-align: center;
+  justify-content: space-around; 
+  margin: 10px;
+  padding: 5px;
+  margin-top: 50px;
+}
