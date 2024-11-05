@@ -113,6 +113,15 @@ li a:hover:not(.active) {
     .certificate {
         height: 100px;
     }
+
+    .box1{
+    position: relative; 
+    top: 230px; 
+    margin: 20px;
+    justify-items: center;
+
+}
+
 }
 
 @media screen and (max-width: 768px) {
@@ -127,7 +136,7 @@ li a:hover:not(.active) {
 
 }
 
-@media screen and (min-width: 769px) and (max-width:3000px) {
+@media screen and (min-width: 768px) and (max-width:3000px) {
     .sidenav {
         display: none;
     }
@@ -135,6 +144,22 @@ li a:hover:not(.active) {
     .text-end {
         display: none;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        display: block;
+    }
+
+    .text-end {
+        display: block;
+    }
+
+    .About{
+        height: 380px;
+    }
+
+
 }
 
 .About{
@@ -147,16 +172,29 @@ li a:hover:not(.active) {
     
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 360px) and (max-width: 426px) {
 
     .About{
     position: relative;
     top: 20px;
-    height: 480px;
-    /* width: 1366px; */
+    height: 330px;
+    width: 360px;
     background-color: #372B60;
     border-radius: 20px;
-    
+}
+
+.ig1{
+    display: none;
+}
+
+.ig2{
+    height: 200px;
+    display: none;
+}
+
+.text-end{
+    position: relative;
+    top: -60px;
 }
 }
 
@@ -202,7 +240,7 @@ li a:hover:not(.active) {
 .footer-content {
   position: relative;
   z-index: 0;
-  background-color: #111;
+  background-color: #33377b;
   top: 160px;
 }
 .footer-pattern img {
@@ -277,8 +315,8 @@ li a:hover:not(.active) {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  background: #111;
-  color: #7641BF;
+  background: #33377b;
+  color: #d0afff;
   text-decoration: none;
 }
 .footer-widget ul li a {
@@ -397,11 +435,11 @@ header{
     </header>
     <div class="container About">
         <div class="row">
-            <div class="col-md-6">
-                <h1 style="color: #ffffff; margin: 20px; top: 80px; position: relative;">
+            <div class="col-md-6" style="position: relative; justify-content: center; text-align: justify;  align-content: center;">
+                <h1 style="color: #ffffff; margin: 20px;">
                     About Company
                 </h1>
-                <p style="color: #fff; font-size: 18px; margin: 20px; top: 100px; position: relative;">
+                <p style="color: #fff; font-size: 18px; margin: 20px; position: relative;">
                     The company behind the most popular Hospital Management System in the world is called Esoteric
                     Projects.
                     Innovative IT company Esoteric Projects has been assisting customers
@@ -409,8 +447,12 @@ header{
                 </p>
             </div>
             <div class="col-md-6">
+                <div class="ig1">
                 <img src="images/Line 4.png" alt="" style="height: 180px; position: absolute; top: 50px;">
+            </div>
+            <div class="ig2">
                 <img src="images/about.png" alt="" style="height: 300px; position: relative; top: 100px;">
+            </div>
             </div>
         </div>
     </div>
