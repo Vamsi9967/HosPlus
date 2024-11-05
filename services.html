@@ -18,11 +18,19 @@
      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
     <!-- External JSCharting library -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <script src="https://code.jscharting.com/latest/jscharting.js"></script>
 <script type="text/javascript" src="https://code.jscharting.com/latest/modules/types.js"></script>
 
@@ -160,6 +168,16 @@ li a:hover:not(.active) {
   }
 }
 
+@media screen and (min-width: 360px) and (max-width: 426px) {
+
+.text-end{
+position: relative;
+top: -60px;
+}
+
+}
+
+
 .icon{
   font-size: 20px;
   margin: 30px;
@@ -194,7 +212,7 @@ li a:hover:not(.active) {
 .footer-content {
   position: relative;
   z-index: 0;
-  background-color: #111;
+  background-color: #33377b;
 }
 .footer-pattern img {
   position: absolute;
@@ -268,8 +286,8 @@ li a:hover:not(.active) {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  background: #111;
-  color: #7641BF;
+  background: #33377b;
+  color: #d0afff;
   text-decoration: none;
 }
 .footer-widget ul li a {
@@ -355,7 +373,7 @@ li a:hover:not(.active) {
 }
 
 .mission{
-  background-color: #7641BF;
+  background-color: #3d3687;
   color: #fff;
   height: 120px;
   border-radius: 10px;
@@ -578,7 +596,7 @@ form{
     font-weight: 400;
     padding: 11px 25px 10px 25px;
     color:#fff;
-    background-color: #DFD7FF;
+    background-color: #c2bcff;
     margin: 0 5px;
     text-align: center;
   }
@@ -588,7 +606,7 @@ form{
   
 /* Create an active/current tablink class */
   .tab button.active {
-    background-color: #7d49e5;
+    background-color: #5048b0;
     color: #fff;
   }
   
@@ -722,7 +740,7 @@ html, body {
 }
 
 .lead1{
-  color: #7d49e5;
+  color: #5048b0;
 }
 
 .chartDiv { margin: 10px auto; }
@@ -773,20 +791,22 @@ html, body {
 }
 
 /* Very small screens (extra small) */
-@media (max-width: 425px) {
+@media (min-width: 360px) and (max-width: 440px) {
   #chartDiv1 {
-    max-width: 100%;
-    height: auto;
+    display: none;
   }
-  .chartDiv img {
-    width: 50px;
-    height: 50px;
+  .chartDiv{
+    display: none;
   }
   .chartDiv span {
-    font-size: 14px;
+    display: none;
   }
 }
 
+.features{
+  text-align: center;
+  font-size: 20px;
+}
 </style>
 </head>
 <body>
@@ -1142,9 +1162,96 @@ html, body {
   </div>
   </div>
 
+  <div class="features">
+    <h1>Features</h1>
+  </div>
+
+  <div class="container-fluied">
+
+    <div class="row" style=" justify-content: space-evenly; position: relative; margin: 10px; text-align: center; margin-top: 60px;">
+
+
+      <div class="col-sm-2" style="height: 200px;">
+
+        <div class="file">
+          <img src="images/checklist.png" alt="" style="height: 60px;">
+          <h4>Medical Records</h4>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/settings.png" alt="" style="height: 60px;">
+        <h4>End to End Integrations</h4>
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/clipboard.png" alt="" style="height: 60px;">
+        <h4>Prescription process Integration</h4>
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/laboratory.png" alt="" style="height: 60px;">
+        <h4>Lab Reports</h4>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container-fluied">
+    <div class="row" style=" justify-content: space-evenly; position: relative; margin: 10px; text-align: center;">
+
+
+      <div class="col-sm-2" style="height: 200px;">
+
+        <div class="file">
+          <img src="images/finger-print.png" alt="" style="height: 60px;">
+          <h4>Identity Verfication</h4>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/schedule.png" alt="" style="height: 60px;">
+        <h4>Appointment Scheduling</h4>
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/analysis.png" alt="" style="height: 60px;">
+        <h4>Data Analytics</h4>
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/kpi-evaluation.png" alt="" style="height: 60px;">
+        <h4>KPI Tracking</h4>
+      </div>
+
+    </div>
+
+    <div class="row" style=" justify-content: space-evenly; position: relative; margin: 10px; text-align: center;">
+      <div class="col-sm-2" style="height: 200px;">
+
+        <div class="file">
+          <img src="images/smartphone.png" alt="" style="height: 60px;">
+          <h4>Mobile Application</h4>
+        </div>
+
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/search.png" alt="" style="height: 60px;">
+        <h4>Drug Catalog</h4>
+      </div>
+
+      <div class="col-sm-2" style="height: 200px;">
+        <img src="images/customize.png" alt="" style="height: 60px;">
+        <h4>Customization</h4>
+      </div>
+    </div>
+  </div>
 
 <footer class="footer-section">
-  <!-- <div class="container-fluied">
+  <div class="container-fluied">
       <div class="footer-content pt-5 pb-5">
           <div class="row">
               <div class="col-xl-4 col-lg-4 mb-50">
@@ -1185,7 +1292,7 @@ html, body {
               </div>
           </div>
       </div>
-  </div> -->
+  </div>
   <!-- <div class="copyright-area">
       <div class="container">
           <div class="row">
@@ -1207,7 +1314,7 @@ html, body {
               </div>
           </div>
       </div>
-  </div> -->
+  </div>
 </footer>
 
     <script>
