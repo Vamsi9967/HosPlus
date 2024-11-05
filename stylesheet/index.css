@@ -117,8 +117,8 @@ li a:hover:not(.active) {
   font-size: 35px;
   position: relative;
   text-align: center;
-  top: 30px;
-  color: #917ED9;
+  top: 55px;
+  color: #53c032;
   font: bold;
 }
 
@@ -126,15 +126,17 @@ li a:hover:not(.active) {
   border-radius: 15px;
   height: 250px;
   width: 320px;
-  background-color: #efeaff;
+  background-color: #5048b0;
+  color: #fff;
 }
 
 .txt {
-  font-size: 30px;
+  font-size: 26px;
   position: relative;
   text-align: center;
   top: 40px;
   font-weight: 400;
+  color: #adadad;
 }
 
 .it {
@@ -187,12 +189,12 @@ li a:hover:not(.active) {
   border: transparent;
   color: #ffffff;
   border-radius: 4px;
-
 }
+
 .btn3{
   height: 55px;
   width: 250px;
-  background-color: #917ED9;
+  background-color: #5048b0;
   margin: 5px;
   border: transparent;
   position: relative;
@@ -203,16 +205,17 @@ li a:hover:not(.active) {
   border-radius: 10px;
   color: #ffffff;
 }
+
 .frame img{
-  width: 450px;
+  width: 350px;
   position: relative;
-  top: 200px;
+
   margin: 10px;
 }
 .frame1 img{
-  width: 450px;
+  width: 300px;
   position: relative;
-  top: 400px;
+
   margin: 10px;
   position: relative;
   z-index: 2;
@@ -295,11 +298,11 @@ li a:hover:not(.active) {
   top: 500px; 
   font-weight:bold; 
   font-size: 25px; 
+  color: #adadad;
   }
 }
 .frame2{
   position: relative;
-  top: 400px;
   margin:0px 40px 5px 5px;
   position: relative;
   z-index: 2;
@@ -309,7 +312,7 @@ li a:hover:not(.active) {
 
 .txt2{
   position: relative; 
-  top: 225px; 
+ 
   font-weight:bold; 
   font-size: 30px; 
   left: 5px;
@@ -427,7 +430,7 @@ box-shadow: -20px 20px white;
 }
 
 .btn2{
-background-color: #917ED9; /* Green */
+background-color: #5048b0; /* Green */
 border: none;
 color: white;
 /* padding: 20px 0px; */
