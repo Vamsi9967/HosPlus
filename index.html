@@ -30,7 +30,7 @@ li a:hover:not(.active) {
     color: #3f3939;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .bg h1 {
         font-size: 18px;
         margin-top: 20px;
@@ -54,11 +54,17 @@ li a:hover:not(.active) {
         font-size: 20px; /* Adjusted font size for mobile */
         text-align: center; /* Center-align for mobile */
         margin-top: 20px; /* Added margin for spacing */
+        color: #818181;
     }
 }
 
-.footer-section {
-  position: relative;
+@media screen and (min-width: 360px) and (max-width: 426px) {
+
+.text-end{
+position: relative;
+top: -60px;
+}
+
 }
 
 .single-cta i {
@@ -84,7 +90,7 @@ li a:hover:not(.active) {
 .footer-content {
   position: relative;
   z-index: 2;
-  background-color: #111;
+  background-color: #33377b;
   top: 160px;
 }
 .footer-pattern img {
@@ -159,8 +165,8 @@ li a:hover:not(.active) {
   margin-bottom: 12px;
 }
 .footer-widget ul li a:hover{
-  background: #111;
-  color: #7641BF;
+  background: #33377b;
+  color: #d0afff;
   text-decoration: none;
 }
 .footer-widget ul li a {
@@ -300,12 +306,12 @@ li a:hover:not(.active) {
   <h2 class="txt1">Product Features</h2>
   <h1 class="txt">All the necessary resources for</h1>
   <h1 class="txt">Hospital managment</h1>
-    <div class="container" style="position: relative; top: 50px;">
+    <div class="container" style="position: relative; top: 50px; align-items: center; left: 30px; ">
     <div class="row">
       <div class="col-sm-4">
           <div class="container1" >
             <div class="icon">
-                <i class="fa-solid fa-folder" style="color: #B197FC;"></i>
+                <i class="fa-solid fa-folder" style="color: #f8f5ff;"></i>
             </div>
 
               <h4 style="font-size: 20px; left: 10px; position: relative;">Patient Record Management</h4> 
@@ -317,7 +323,7 @@ li a:hover:not(.active) {
       <div class="col-sm-4">
           <div class="container1" >
             <div class="icon">
-              <i class="fa-solid fa-calendar-days" style="color: #B197FC;"></i>
+              <i class="fa-solid fa-calendar-days" style="color: #f8f5ff;"></i>
             </div>
             <h4 style="font-size: 20px; left: 10px; position: relative;">Appointment Scheduling</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 15px 5px 5px;">A digital tool that helps businesses and individuals 
@@ -328,7 +334,7 @@ li a:hover:not(.active) {
       <div class="col-sm-4">
           <div class="container1" >
             <div class="icon">
-            <i class="fa-solid fa-file" style="color: #B197FC;"></i>
+            <i class="fa-solid fa-file" style="color: #f8f5ff;"></i>
         </div>
             <h4 style="font-size: 20px; left: 10px; position: relative;">Billing and Invoicing</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 15px 5px 5px;">A digital tool that automates the process of creating and managing invoices for businesses.</p>
@@ -338,12 +344,12 @@ li a:hover:not(.active) {
     </div>
     
     </div></br>
-    <div class="container" style="position: relative; top: 50px;">
+    <div class="container" style="position: relative; top: 50px; align-items: center; left: 30px; ">
       <div class="row">
         <div class="col-sm-4">
             <div class="container1" >
                 <div class="icon">
-                <i class="fa-solid fa-user-doctor" style="color: #B197FC;"></i>
+                <i class="fa-solid fa-user-doctor" style="color: #f8f5ff;"></i>
             </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Physician Management</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 5px 5px 5px;">A tool designed to streamline administrative </br> and clinical tasks in healthcare practices.</p>
@@ -353,7 +359,7 @@ li a:hover:not(.active) {
         <div class="col-sm-4">
             <div class="container1" >
                 <div class="icon">
-                    <i class="fa-solid fa-vial-virus" style="color: #B197FC;"></i>
+                    <i class="fa-solid fa-vial-virus" style="color: #f8f5ff;"></i>
                 </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Lab Managment</h4>
               <p style="left: 10px; position: relative; justify-content: center; margin: 0px 10px 5px 5px;">A digital solution designed to streamline the operations of a laboratory.</p>
@@ -362,10 +368,10 @@ li a:hover:not(.active) {
         <div class="col-sm-4">
             <div class="container1">
                 <div class="icon">
-                    <i class="fa-solid fa-file-waveform" style="color: #B197FC;"></i>
+                    <i class="fa-solid fa-file-waveform" style="color: #f8f5ff;"></i>
                 </div>
               <h4  style="font-size: 20px; left: 10px; position: relative;">Medical Billing </h4>
-              <p style="left: 10px; position: relative; justify-content: center; margin:0px 5px 5px 5px; color: #8A8A8A;">A digital tool used in healthcare settings to streamline and manage patient care outside of hospital stays.</p>
+              <p style="left: 10px; position: relative; justify-content: center; margin:0px 5px 5px 5px;">A digital tool used in healthcare settings to streamline and manage patient care outside of hospital stays.</p>
               
             </div>
         </div>
@@ -373,16 +379,16 @@ li a:hover:not(.active) {
       
     </div>
     <div class="container">
-        <button class="btn3"> View all Features </button>
+      <button class="btn3" type="button">View all Features </a> </button>
     </div>
-<div class="container">
+<div class="container" style="position: relative; margin-top: 150px;">
     <div class="row">
         <div class="col-md-6">
             <div class="frame">
             <img src="images/Frame 2.png" alt="">
         </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="justify-content: center; text-align: justify;  align-content: center;">
             <div class="frame1">
                 <img src="images/text.png" alt="">
             </div>
@@ -396,41 +402,42 @@ li a:hover:not(.active) {
     </div>
 </div>
 
-<div class="container-fluied">
-    <div class="row">
-        <div class="col-md-6">
-            <h1 class="txt2">What Makes HMS The Best Hospital Management Software</h1>
-            <h3 style="position: relative; top: 250px; color: #626262; left: 5px;">Staff, Patient, Doctor, and Admin are all related.</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6" style=" height: 200px; width: 250px; top: 300px; left: 10px;">
-                        <p>Staff Portal</p>
-                        <p>Portals for the following staff roles: Accountant, 
-                            Pathologist, Radiologist, Pharmacist, and Receptionist</p>
-                    </div>
-                    <div class="col-md-6" style=" height: 200px; width: 250px; position: relative; left: 40px; top: 300px;">
-                        <p>Patient Portal</p>
-                        <p>Make an appointment, pay, access clinical data, and do a lot more.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6" style=" height: 200px; width: 250px; top: 320px; left: 10px;">
-                        <p>Doctor Portal</p>
-                        <p>Organize patient care, medications, appointments, assignments, and a lot more.</p>
-                    </div>
-                    <div class="col-md-6" style=" height: 200px; width: 250px; position: relative; left: 40px; top: 320px;">
-                        <p>Admin Portal</p>
-                        <p>Create new user roles and accounts, manage all the modules, billing, reports, and much more.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6 im2">
-            <img src="images/doc1.png" alt="" style="width: 620px; position: relative; top: 250px;">
-        </div>
-    </div>
+<div class="container" style="position: relative; margin-top: 80px;">
+  <h1 class="txt2">What Makes HMS The Best Hospital Management Software</h1>
+  <h3 style="position: relative; color: #626262; left: 5px;">Staff, Patient, Doctor, and Admin are all related.</h3>
 </div>
+
+<div class="container-fluied">
+  <div class="row" style="position: relative; margin-top: 70px; text-align: center; justify-content: space-around; margin: 10px; padding: 5px;">
+    
+    <div class="col-md-3">
+      <p>Staff Portal</p>
+      <p>Portals for the following staff roles: Accountant,
+        Pathologist, Radiologist, Pharmacist, and Receptionist</p>
+    </div>
+
+    <div class="col-md-3">
+      <p>Doctor Portal</p>
+        <p>Organize patient care, medications, appointments, assignments, and a lot more.</p>
+    </div>
+
+    <div class="col-md-3">
+      <p>Patient Portal</p>
+      <p>Make an appointment, pay, access clinical data, and do a lot more.</p>
+    </div>
+
+    <div class="col-md-3">
+      <p>Admin Portal</p>
+      <p>Create new user roles and accounts, manage all the modules, billing, reports, and much more.</p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
 
 <footer class="footer-section">
     <div class="container-fluied">
